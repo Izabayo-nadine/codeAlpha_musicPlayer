@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link rel="stylesheet" href="music.css">
+</head>
+<body>
+<div class="container">
+    <h2>Music player</h2>
+    <div class="artist">
+        <img src="images/ayra.png" alt="Album-Art" id="album-art">
+        <p class="namec">Ayra Star</p>
+    </div>
+
+    <div class="time-display">
+        <span id="current-time">00:00</span><input type="range" min="0" max="100" value="0" class="progress-bar" id="progress-bar"><span id="total-duration">00:00</span>
+    </div>
+    <div class="buttons">
+        <box-icon name='shuffle' size="25px" color="white" class="shuffle"></box-icon>
+        <box-icon type='solid' name='skip-previous-circle' size="50px" color="white" class="prev"></box-icon>
+        <box-icon name='pause-circle' class="pause" size="50px" color="white"></box-icon>
+        <box-icon name='play-circle' size="50px" color="white" class="play"></box-icon>
+        <box-icon name='skip-next-circle' type='solid' size="50px" color="white" class="next"></box-icon>
+        <box-icon name='git-compare' size="25px" color="white" class="repeat"></box-icon>
+    </div>
+    <script src="music.js"></script>
+</div>
+</body>
+</html>

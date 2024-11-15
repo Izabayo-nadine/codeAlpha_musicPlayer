@@ -1,0 +1,146 @@
+body {
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 10%;
+    height: 100vh;
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    background-color: rgb(18, 18, 18);
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.container h2 {
+    text-align: center;
+    color: rgb(237, 230, 230);
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.artist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.artist img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+.time-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 15px;
+}
+
+#current-time,
+#total-duration {
+    font-size: 1rem;
+    margin: 0 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.buttons box-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.buttons box-icon:hover {
+    transform: scale(1.2);
+}
+
+.pause {
+    display: none;
+}
+
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .artist img {
+        width: 120px;
+        height: 120px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .buttons box-icon {
+        font-size: 1.5rem;
+    }
+
+    .time-display {
+        font-size: 0.9rem;
+    }
+}
+
+/* Adjust for very small screens */
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+    }
+
+    .container h2 {
+        font-size: 1.2rem;
+    }
+
+    .artist img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .buttons box-icon {
+        font-size: 1.3rem;
+    }
+
+    .time-display {
+        font-size: 0.8rem;
+    }
+
+    .progress-bar {
+        width: 80%;
+    }
+    
+}
